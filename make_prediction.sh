@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-PORT=8000
+PORT=`kubectl get svc | grep prediction | awk $'{print $5}' | cut -d: -f 2 | cut -d/ -f 1`
 echo "Port: $PORT"
 
 # POST method predict
