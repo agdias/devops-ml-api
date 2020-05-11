@@ -53,13 +53,9 @@ spec:
   - name: http
     port: 80
     protocol: TCP
-    targetPort: 8000
+    targetPort: 80
 
 EOF
 
 kubectl create -f prediction-service.yaml
-PORT=`kubectl get service | grep prediction | awk '{print $5}' | cut -d: -f 2 | cut -d/ -f 1`
-echo "updating the make_prediction script..."
-OP=`grep PORT= make_prediction.sh  | cut -d= -f 2`
 
-sed -i "s/$OP/$PORT/g"  make_prediction.sh
