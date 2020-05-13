@@ -3,41 +3,66 @@
 
 ## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
+In this project, I had the opportunity to apply the skills  acquired in the Microservices at Scale using AWS & Kubernetes topic from Udacity's Cloud Devops Engineer Nanodegree   course to operationalize a Machine Learning Microservice API.
 
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+## Steps to run on Docker
 
-### Project Tasks
+1. run the run_docker.sh script
+   This will build the image for the service
+2. Upload the image built on step 1 to Docker Hub Repository 
+3. Make a  prediction
+   You have to run the make_prediction_docker.sh
+   Example:
+   # make_predicion_docker.sh
+   
+      Port: 8000
+      {
+        "prediction": [
+          20.35373177134412
+        ] 
+      }
 
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test your project code using linting
-* Complete a Dockerfile to containerize this application
-* Deploy your containerized application using Docker and make a prediction
-* Improve the log statements in the source code for this application
-* Configure Kubernetes and create a Kubernetes cluster
-* Deploy a container using Kubernetes and make a prediction
-* Upload a complete Github repo with CircleCI to indicate that your code has been tested
+## Steps to run on Kubernetes
+1. Run the run_kubernetes.sh
+2. Make a prediction.
+   You have to run the make_prediction_kubernetes.sh
+   Example: 
+   # make_prediction_kubernetes.sh
+   ## Project Overview
 
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
+In this project, I had the opportunity to apply the skills  acquired in the Microservices at Scale using AWS & Kubernetes topic from Udacity's Cloud Devops Engineer Nanodegree   course to operationalize a Machine Learning Microservice API.
 
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
+## Steps to run on Docker
 
----
+1. run the run_docker.sh script
+   This will build the image for the service
+2. Make a  prediction
+   You have to run the make_prediction_docker.sh
+   Example:
+   # make_predicion_docker.sh
+      Port: 8000
+      {
+        "prediction": [
+          20.35373177134412
+        ] 
+      }
 
-## Setup the Environment
+## Steps to run on Kubernetes
+1. Run the run_kubernetes.sh script
+   This will create a pod and a service to expose the application to the outside of container
 
-* Create a virtualenv and activate it
-* Run `make install` to install the necessary dependencies
+2. Make a prediction
+   Run the make_prediction_kubernetes.sh
 
-### Running `app.py`
+     Port: 32364
+      {
+        "prediction": [
+          20.35373177134412
+        ]
+      }
+   
+   
 
-1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
 
-### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+
