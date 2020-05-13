@@ -1,3 +1,4 @@
+[![agdias](https://circleci.com/gh/agdias/devops-ml-api.svg?style=svg)] (https://circleci.com/gh/agdias/devops-ml-api/tree/master)
 <include a CircleCI status badge, here>
 
 ## Project Overview
