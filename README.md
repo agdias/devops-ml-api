@@ -1,4 +1,4 @@
-[!agdias (https://circleci.com/gh/agdias/devops-ml-api.svg?style=svg)] (https://circleci.com/gh/agdias/devops-ml-api/tree/master)
+[![agdias](https://circleci.com/gh/agdias/devops-ml-api.svg?style=svg)] (https://circleci.com/gh/agdias/devops-ml-api/tree/master)
 
 ## Project Overview
 
