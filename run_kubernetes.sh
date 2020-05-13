@@ -5,7 +5,7 @@
 # Step 1:
 # This is your Docker ID/path
 echo "Step 1: setting up docker id/path..."
-dockerpath="angelodias/predict"
+dockerpath="angelodias/prediction"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
