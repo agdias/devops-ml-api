@@ -1,9 +1,5 @@
-!https://circleci.com/gh/agdias/devops-ml-api.svg?style=svg!:https://circleci.com/agdias/devops-ml-api/tree/master
+[!agdias(https://circleci.com/gh/agdias/devops-ml-api.svg?style=svg)]https://circleci.com/gh/agdias/devops-ml-api/tree/master
 
-
-#[![agdias](https://circleci.com/gh/agdias/devops-ml-api.svg?style=svg)] (https://circleci.com/gh/agdias/devops-ml-api/tree/master)
-
-#!https://circleci.com/gh/circleci/circleci-docs.svg?style=svg!:https://circleci.com/gh/circleci/circleci-docs
 
 ## Project Overview
 
